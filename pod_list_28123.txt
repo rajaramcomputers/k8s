@@ -1,0 +1,15 @@
+NAME                             READY   STATUS      RESTARTS        AGE
+hello-world-demo-control-plane   1/1     Running     65 (3d4h ago)   30d
+nginx                            1/1     Running     0               9h
+nginx-dev1                       0/1     Unknown     0               8d
+nginx-dev2                       0/1     Unknown     0               8d
+nginx-dev3                       0/1     Unknown     0               8d
+nginx-prod1                      0/1     Unknown     0               8d
+nginx-prod2                      0/1     Unknown     0               8d
+redis                            1/1     Running     1 (3d4h ago)    4d2h
+secbusybox                       0/1     Completed   0               10h
+task-pv-pod                      1/1     Running     0               3d3h
+web-0                            1/1     Running     38 (3d4h ago)   30d
+web-1                            1/1     Running     38 (3d4h ago)   30d
+web-2                            1/1     Running     38 (3d4h ago)   30d
+webs                             0/1     Unknown     0               8d
