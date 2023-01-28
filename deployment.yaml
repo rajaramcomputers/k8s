@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nginx-prod1
+  name: nginx
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      author: raja
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx-prod2
+        author: raja  
+    spec:
+      containers:
+      - image: nginx 
+        name: nginx
+        resources: {}
+status: {}

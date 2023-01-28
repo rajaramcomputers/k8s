@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: pod2
+  name: pod2
+spec:
+  containers:
+  - image: nginx
+    name: pod2
+    volumeMounts:
+      - name: myvol1
+        mountPath: /etc/config
+  volumes:
+    - name: myvol1
+      configMap:
+        name: mycm1

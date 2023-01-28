@@ -1,0 +1,6 @@
+replicaCount: 3
+service:
+  type: NodePort
+  port: 80
+image: nginx:1.9.1
+

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: webappnginx
+  name: webappnginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webappnginx
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: webappnginx
+    spec:
+      containers:
+      - image: nginx:1.17.1
+        name: nginx
+        resources: {}
+status: {}

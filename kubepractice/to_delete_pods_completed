@@ -1,0 +1,1 @@
+kubectl get pods --no-headers=true |grep -v "Running" | grep -v "Pending" | sed -E 's/([a-z0-9-]+).*/\1/g' | xargs kubectl delete pod

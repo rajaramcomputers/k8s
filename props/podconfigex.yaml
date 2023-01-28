@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-configmap-pod
+spec:
+  containers:
+  - name: myctr
+    image: busybox
+    command: ['sh','-c','echo $(MY_VAL) && sleep 3600']
+    env:
+    - name: MY_VAL
+      valueFrom: 
+        configMapKeyRef:
+                name: literal-config
+                key: myName
+
+
